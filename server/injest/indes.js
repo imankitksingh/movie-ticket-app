@@ -65,7 +65,7 @@ const relaeaseSeatsAndDeleteBooking = inngest.createFunction(
                 booking.bookedSeats.forEach((seat) => {
                     delete show.occupiedSeats[seat]
                 });
-                show.markModified(occupiedSeats)
+                show.markModified("occupiedSeats")
                 await show.save()
                 await Booking.findByIdAndDelete(booking._id)
             }
@@ -74,4 +74,4 @@ const relaeaseSeatsAndDeleteBooking = inngest.createFunction(
 )
 
 // empty array where we'll export future Inngest functions
-export const functions = [syncUserCreation, syncUserDeletion, syncUserUpdation];
+export const functions = [syncUserCreation, syncUserDeletion, syncUserUpdation, relaeaseSeatsAndDeleteBooking];
