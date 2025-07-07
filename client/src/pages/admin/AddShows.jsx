@@ -4,7 +4,7 @@ import { dummyShowsData } from '../../assets/assets'
 import Loading from '../../components/Loading'
 import { AwardIcon, CheckIcon, DeleteIcon, StarIcon } from 'lucide-react'
 import { kconverted } from '../../lib/Kconverter'
-import { useAppContext } from '../../context/appContext'
+import { useAppContext } from '../../context/AppContext.jsx'
 import toast from 'react-hot-toast'
 
 const AddShows = () => {

@@ -3,7 +3,7 @@ import { dummyShowsData } from '../../assets/assets'
 import Loading from '../../components/Loading'
 import Title from '../../components/admin/Title'
 import { DateFormate } from '../../lib/DateFormat'
-import { useAppContext } from '../../context/appContext'
+import { useAppContext } from '../../context/AppContext'
 
 
 const ListShows = () => {

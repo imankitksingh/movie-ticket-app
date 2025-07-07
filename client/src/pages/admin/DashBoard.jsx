@@ -5,7 +5,7 @@ import Loading from '../../components/Loading'
 import Title from '../../components/admin/Title'
 import BlurCircle from '../../components/BlurCircle'
 import { DateFormate } from '../../lib/DateFormat'
-import { useAppContext } from '../../context/appContext'
+import { useAppContext } from '../../context/AppContext'
 import toast from 'react-hot-toast'
 
 const DashBoard = () => {

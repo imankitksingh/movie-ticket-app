@@ -6,7 +6,7 @@ import ISOTimeFormat from '../lib/ISOTimeFormat'
 import BlurCircle from '../components/BlurCircle'
 import { assets } from '../assets/assets'
 import toast from 'react-hot-toast'
-import { useAppContext } from '../context/appContext'
+import { useAppContext } from '../context/AppContext'
 
 const SeatLayout = () => {
 
