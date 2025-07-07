@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import { Home, Movies, MovieDetails, Favorite, MyBookings, SeatLayout } from './pages/pages.js'
 import { Layout, DashBoard, AddShows, ListBookings, ListShows } from "./pages/admin/pages.js"
 import { SignIn } from '@clerk/clerk-react'
-import { useAppContext } from './context/appContext.jsx'
+import { useAppContext } from './context/AppContext.jsx'
 import Loading from './components/Loading.jsx'
 
 const App = () => {
