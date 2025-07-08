@@ -57,6 +57,7 @@ const AddShows = () => {
                 setSelectMovie(null)
                 setDateTimeInput({})
                 setShowPrice("")
+                setDateTimeSelection({})
             } else {
                 toast.error(data.message)
             }
@@ -89,7 +90,7 @@ const AddShows = () => {
     }
 
     const handleRemoveTime = (date, time) => {
-        setDateTimeInput((prev) => {
+        setDateTimeSelection((prev) => {
             const times = prev[date] || [];
             const filteredTimes = times.filter((t) => t !== time)
             if (filteredTimes.length === 0) {
@@ -168,7 +169,7 @@ const AddShows = () => {
                     />
                     <button
                         onClick={handleDateTimeAdd}
-                        className="bg-primary/80 text-white px-3 py-2 text-sm rounded-lg hover:bg-primary cursor-pointer"
+                        className="bg-primary/80 text-black px-3 py-2 text-sm rounded-lg hover:bg-primary cursor-pointer"
                     >
                         Add Time
                     </button>

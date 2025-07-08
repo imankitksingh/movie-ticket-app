@@ -109,7 +109,7 @@ const SeatLayout = () => {
     return show ? (
         <div className='flex flex-col md:flex-row px-6 md:px-16 lg:px-40 py-30 md:pt-50'>
             {/*Available timings*/}
-            <div className='w-60 bg-primary/10 border border-primary/20 rounded-lg py-10 h-max md:sticky md:top-30'>
+            <div className='w-60 bg-primary/10 border mobile-center border-primary/20 rounded-lg py-10 h-max md:sticky md:top-30'>
                 <p className='text-lg font-semibold px-6'>Available Timings</p>
                 <div className='mt-5 space-y-1'>
                     {show.dateTime[date].map((item) => (
@@ -128,8 +128,8 @@ const SeatLayout = () => {
                 <BlurCircle top="-100px" left="-100px" />
                 <BlurCircle bottom="0" right="0" />
                 <h1 className='text-2xl font-semibold mb-4'>Select your seat</h1>
-                <img src={assets.screenImage} alt="screen" />
-                <p className='text-gray-400 text-sm mb-6'>SCREEN SIDE</p>
+                <div className='h-2 md:w-[500px] w-[300px] bg-primary/50 mb-3 '></div>
+                <p className='text-gray-400 text-sm mb-1'>SCREEN SIDE</p>
                 <div className='flex flex-col items-center mt-10 text-xs text-gray-300'>
                     <div className='grid grid-cols-2 md:grid-cols-1 gap-8 md:gap-2 mb-6'>
                         {groupRows[0].map(row => renderSeats(row))}
